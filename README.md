@@ -19,14 +19,14 @@ i also included demos in this package too see how PixelSlide will work.
 =====================================================
 PixelSlide HTML Structure
 =====================================================
-<html>
+```
 <div class="pixelSlide_Container">
     <span><img src="thumb03.jpg" /></span>
     <span><img src="thumb04.jpg" /></span>
     <span><img src="thumb05.jpg" /></span>
     ....
 </div>
-</html>
+```
 
 I added (pixelSlide_Container) class on div you can use any name as you like for use in jquery.
 
