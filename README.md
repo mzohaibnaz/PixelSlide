@@ -19,12 +19,12 @@ i also included demos in this package too see how PixelSlide will work.
 =====================================================
 PixelSlide HTML Structure
 =====================================================
-<div class="pixelSlide_Container">
-    <span><img src="thumb03.jpg" /></span>
-    <span><img src="thumb04.jpg" /></span>
-    <span><img src="thumb05.jpg" /></span>
-    ....
-</div>
+> <div class="pixelSlide_Container">
+>    <span><img src="thumb03.jpg" /></span>
+>    <span><img src="thumb04.jpg" /></span>
+>    <span><img src="thumb05.jpg" /></span>
+>    ....
+> </div>
 
 I added (pixelSlide_Container) class on div you can use any name as you like for use in jquery.
 
@@ -32,20 +32,20 @@ you and also and optional html structure as you like for next/prev/start/pause b
 - note these htmls are options if you don't mention PixelSlide will generate automatically.
 - But the Start/Pause button is conditional if you run PixelSlide as auto slide mode then html will be generated.
 
-<div class="main_container">
+> <div class="main_container">
 
-    <a href="#" class="prev">Prev</a>
-    <a href="#" class="next">Next</a>
-    <a href="#" class="start">Start</a>
-    <a href="#" class="Pause">Pause</a>
+>    <a href="#" class="prev">Prev</a>
+>    <a href="#" class="next">Next</a>
+>    <a href="#" class="start">Start</a>
+>    <a href="#" class="Pause">Pause</a>
     
-    <div class="pixelSlide_Container">
-        <span><img src="thumb03.jpg" /></span>
-        <span><img src="thumb04.jpg" /></span>
-        <span><img src="thumb05.jpg" /></span>
-        ....
-    </div>
-</div>
+>    <div class="pixelSlide_Container">
+>        <span><img src="thumb03.jpg" /></span>
+>        <span><img src="thumb04.jpg" /></span>
+>        <span><img src="thumb05.jpg" /></span>
+>        ....
+>    </div>
+> </div>
 
 i added for links with class to control slider and we will use these classed on jquery lets move on jquery
 
@@ -55,53 +55,53 @@ How to Use PixelSlide in jQuery
 
 first you need to include jQuery and PixelSlide files on document head tag - Example
 
-<html>
-    <head>
-        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/pixelSlide.min.js"></script>
-    </head>
-    <body>
-        ....
-    </body>
-</html>
+> <html>
+>    <head>
+>        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+>        <script type="text/javascript" src="js/pixelSlide.min.js"></script>
+>    </head>
+>    <body>
+>        ....
+>    </body>
+> </html>
 
 now you just need to call PixelSlide plugin now lets take look on all code.
 
-<html>
-    <head>
-        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/pixelSlide.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                // here call pixelSlide
-                $(".scroller_contents").pixelSlide({
-                    width: 300,
-                    nextBtn: ".next",
-                    prevBtn: ".prev",
-                    speed: 500,
-                    margin: 14,
-                    mode: "horizontal",
-                    auto: true
-                });
-            });
-        </script>
-    </head>
-    <body>
-        <div class="main_container">
-            <a href="#" class="prev">Prev</a>
-            <a href="#" class="next">Next</a>
-            <a href="#" class="start">Start</a>
-            <a href="#" class="Pause">Pause</a>
+><html>
+>    <head>
+>        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+>        <script type="text/javascript" src="js/pixelSlide.min.js"></script>
+>        <script type="text/javascript">
+>            $(document).ready(function(){
+>                // here call pixelSlide
+>                $(".scroller_contents").pixelSlide({
+>                    width: 300,
+>                    nextBtn: ".next",
+>                    prevBtn: ".prev",
+>                    speed: 500,
+>                    margin: 14,
+>                    mode: "horizontal",
+>                    auto: true
+>                });
+>            });
+>        </script>
+>    </head>
+>    <body>
+>        <div class="main_container">
+>            <a href="#" class="prev">Prev</a>
+>            <a href="#" class="next">Next</a>
+>            <a href="#" class="start">Start</a>
+>            <a href="#" class="Pause">Pause</a>
             
-            <div class="pixelSlide_Container">
-                <span><img src="thumb03.jpg" /></span>
-                <span><img src="thumb04.jpg" /></span>
-                <span><img src="thumb05.jpg" /></span>
-                ....
-            </div>
-        </div>
-    </body>
-</html>
+>            <div class="pixelSlide_Container">
+>                <span><img src="thumb03.jpg" /></span>
+>                <span><img src="thumb04.jpg" /></span>
+>                <span><img src="thumb05.jpg" /></span>
+>                ....
+>            </div>
+>        </div>
+>    </body>
+></html>
 
 
 -------------------------------------------
