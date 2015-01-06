@@ -33,7 +33,7 @@ I added (pixelSlide_Container) class on div you can use any name as you like for
 you and also and optional html structure as you like for next/prev/start/pause buttons - Example
 - note these htmls are options if you don't mention PixelSlide will generate automatically.
 - But the Start/Pause button is conditional if you run PixelSlide as auto slide mode then html will be generated.
-
+```
 <div class="main_container">
 
     <a href="#" class="prev">Prev</a>
@@ -48,7 +48,7 @@ you and also and optional html structure as you like for next/prev/start/pause b
         ....
     </div>
 </div>
-
+```
 i added for links with class to control slider and we will use these classed on jquery lets move on jquery
 
 =====================================================
@@ -56,7 +56,7 @@ How to Use PixelSlide in jQuery
 =====================================================
 
 first you need to include jQuery and PixelSlide files on document head tag - Example
-
+```
 <html>
     <head>
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -66,9 +66,9 @@ first you need to include jQuery and PixelSlide files on document head tag - Exa
         ....
     </body>
 </html>
-
+```
 now you just need to call PixelSlide plugin now lets take look on all code.
-
+```
 <html>
     <head>
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -105,7 +105,7 @@ now you just need to call PixelSlide plugin now lets take look on all code.
     </body>
 </html>
 
-
+```
 -------------------------------------------
 Parameters of PixelSlide Plugin
 -------------------------------------------
