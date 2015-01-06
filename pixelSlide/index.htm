@@ -14,11 +14,14 @@
                 prevBtn: ".prev",
                 speed: 500,
                 margin: 14,
-                auto: true
+                items: 3
             });
         });
     </script>
     <style type="text/css">
+    .hide{
+        color:red;
+    }
         .scroller_contents{
             width: 928px;
             height: 190px;
@@ -45,8 +48,6 @@
 
 <div id="scroller_main">
   <span class="prev">Prev</span>
-  <span id="pauseBtn">- Pause</span>
-  <span id="startBtn">- Start</span>
   <span class="next">- Next</span>
   <div class="scroller_contents">
         <span><img src="thumb03.jpg" /></span>
