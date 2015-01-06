@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+    
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/pixelSlide.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".scroller_contents").pixelSlide({
+                width: 300,
+                nextBtn: ".next",
+                prevBtn: ".prev",
+                speed: 500,
+                margin: 14,
+                auto: true
+            });
+        });
+    </script>
+    <style type="text/css">
+        .scroller_contents{
+            width: 928px;
+            height: 190px;
+            padding: 10px;
+            background-color: #F5F5F5;
+        }
+        
+        .scroller_contents span{
+            margin-right: 10px;
+        }
+        .scroller_contents span img{
+            width: 300px;
+            height: 190px;
+        }
+        
+        .clear{
+            clear: both;
+        }
+    </style>
+	<title>PixelSlide Demo</title>
+</head>
+
+<body>
+
+<div id="scroller_main">
+  <span class="prev">Prev</span>
+  <span id="pauseBtn">- Pause</span>
+  <span id="startBtn">- Start</span>
+  <span class="next">- Next</span>
+  <div class="scroller_contents">
+        <span><img src="thumb03.jpg" /></span>
+        <span><img src="thumb04.jpg" /></span>
+        <span><img src="thumb05.jpg" /></span>
+        <span><img src="thumb03.jpg" /></span>
+        <span><img src="thumb04.jpg" /></span>
+        <span><img src="thumb05.jpg" /></span>
+        <span><img src="thumb03.jpg" /></span>
+  </div>
+</div>
+
+</body>
+</html>
