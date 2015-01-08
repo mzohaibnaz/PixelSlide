@@ -7,6 +7,7 @@ Why we use PixelSlide?
 ======================
 PixelSlide is simple to use with key of many options to control your slider.
 You can use PixelSlide as many time on your site with both directions (vertical/horizontal).
+PixelSlide also support jQuery UI all effects just need pass 1 paramater.
 
 Lets see how PixelSlide works
 =====================================================
@@ -113,6 +114,7 @@ Parameters of PixelSlide Plugin
       width: 260,           // lets PixelSlide to know how much width of your each span or item to slider horizontal perfectally
       height: 190,          // lets PixelSlide to know how much width of your each span or item to slider vertical perfectally
       items: 3,             // lets PixelSlide to know how much items you want to slide each time or how much item is displaying
+      effect: "scroll"      // default is scroll but you can apply all effect of jQuery UI but don't forget to include jQuery UI library
       nextBtn: false,       // provide id or class for next slide - default is .next
       prevBtn: false,       // provide id or class for previous slide - default is .prev
       pauseBtn: false,      // provide id or class for Pause Slider - default is .pauseBtn
@@ -121,7 +123,7 @@ Parameters of PixelSlide Plugin
       margin: 10,           // lets PixelSlide to know how much margin is between items to slide in perfect position
       speed: 1000,          // enter time to how much milliseconds time takes by each slide
       auto: false,          // run slider auto without click on next or previous buttons
-      autoSpeed: 2000,      // how much speed for run auto
+      delay: 2000,          // how much each slide delay
       toggleClass: false    // add class for toggle . it will be added on next/prev/start/pause buttons when its hide . if its false then slider will automatically hide buttons
 
 And Thats All.

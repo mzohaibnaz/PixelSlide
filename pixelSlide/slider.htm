@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html" />
 	<meta name="author" content="lolkittens" />
+    
     <link rel="stylesheet" href="jquery-ui.css" />
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
@@ -10,39 +11,35 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $(".scroller_contents").pixelSlide({
-                height: 190,
-                speed: 500,
-                margin: 10,
-                mode: "vertical",
-                items: 2,
-                toggleClass: "hide",
+                width: 943,
+                nextBtn: ".next",
+                prevBtn: ".prev",
+                speed: 1000,
+                margin: 14,
+                items: 1,
                 auto: true,
-                effect: "bounce"
+                delay: 3000,
+                effect: "pulsate"
             });
         });
     </script>
     <style type="text/css">
-        .next,.prev{
-            font-weight: bold;
-            margin: 10px;
-        }
-        .hide{
-            display: none;
-        }
+    .hide{
+        color:red;
+    }
         .scroller_contents{
-            width: 300px;
+            width: 943px;
             height: 390px;
             padding: 10px;
             background-color: #F5F5F5;
         }
         
         .scroller_contents span{
-            margin-bottom: 6px;
-            display: block;
+            margin-right: 10px;
         }
         .scroller_contents span img{
-            width: 300px;
-            height: 190px;
+            width: 943px;
+            height: 390px;
         }
         
         .clear{
@@ -55,12 +52,22 @@
 <body>
 
 <div id="scroller_main">
+  <span class="prev">Prev</span>
+  <span class="next">- Next</span>
   <div class="scroller_contents">
         <span><img src="thumb03.jpg" /></span>
         <span><img src="thumb04.jpg" /></span>
-        <span><img src="thumb04.jpg" /></span>
-        <span><img src="thumb03.jpg" /></span>
         <span><img src="thumb05.jpg" /></span>
+        <span><img src="thumb03.jpg" /></span>
+        <span><img src="thumb04.jpg" /></span>
+        <span><img src="thumb05.jpg" /></span>
+        <span><img src="thumb03.jpg" /></span>
+        <span><img src="thumb04.jpg" /></span>
+        <span><img src="thumb05.jpg" /></span>
+        <span><img src="thumb03.jpg" /></span>
+        <span><img src="thumb04.jpg" /></span>
+        <span><img src="thumb05.jpg" /></span>
+        <span><img src="thumb03.jpg" /></span>
   </div>
 </div>
 

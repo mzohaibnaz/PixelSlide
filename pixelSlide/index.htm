@@ -4,7 +4,9 @@
 	<meta http-equiv="content-type" content="text/html" />
 	<meta name="author" content="lolkittens" />
     
+    <link rel="stylesheet" href="jquery-ui.css" />
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/pixelSlide.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -12,9 +14,12 @@
                 width: 300,
                 nextBtn: ".next",
                 prevBtn: ".prev",
-                speed: 500,
+                speed: 2000,
                 margin: 14,
-                items: 3
+                items: 4,
+                auto: true,
+                delay: 2000,
+                effect: "pulsate"
             });
         });
     </script>
@@ -23,7 +28,7 @@
         color:red;
     }
         .scroller_contents{
-            width: 928px;
+            width: 1243px;
             height: 190px;
             padding: 10px;
             background-color: #F5F5F5;
@@ -50,6 +55,12 @@
   <span class="prev">Prev</span>
   <span class="next">- Next</span>
   <div class="scroller_contents">
+        <span><img src="thumb03.jpg" /></span>
+        <span><img src="thumb04.jpg" /></span>
+        <span><img src="thumb05.jpg" /></span>
+        <span><img src="thumb03.jpg" /></span>
+        <span><img src="thumb04.jpg" /></span>
+        <span><img src="thumb05.jpg" /></span>
         <span><img src="thumb03.jpg" /></span>
         <span><img src="thumb04.jpg" /></span>
         <span><img src="thumb05.jpg" /></span>
