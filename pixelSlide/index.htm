@@ -11,15 +11,17 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $(".scroller_contents").pixelSlide({
-                width: 300,
+                width: 260,
                 nextBtn: ".next",
                 prevBtn: ".prev",
-                speed: 2000,
-                margin: 14,
+                speed: 500,
+                margin: 10,
                 items: 4,
-                auto: true,
+                auto: false,
                 delay: 2000,
-                effect: "pulsate"
+                tag: "div",
+                effect: "scroll",
+                toggleClass: "hide"
             });
         });
     </script>
@@ -28,14 +30,15 @@
         color:red;
     }
         .scroller_contents{
-            width: 1243px;
+            width: 1070px;
             height: 190px;
             padding: 10px;
             background-color: #F5F5F5;
         }
         
-        .scroller_contents span{
+        .scroller_contents div{
             margin-right: 10px;
+            float: left;            
         }
         .scroller_contents span img{
             width: 300px;
@@ -55,19 +58,15 @@
   <span class="prev">Prev</span>
   <span class="next">- Next</span>
   <div class="scroller_contents">
-        <span><img src="thumb03.jpg" /></span>
-        <span><img src="thumb04.jpg" /></span>
-        <span><img src="thumb05.jpg" /></span>
-        <span><img src="thumb03.jpg" /></span>
-        <span><img src="thumb04.jpg" /></span>
-        <span><img src="thumb05.jpg" /></span>
-        <span><img src="thumb03.jpg" /></span>
-        <span><img src="thumb04.jpg" /></span>
-        <span><img src="thumb05.jpg" /></span>
-        <span><img src="thumb03.jpg" /></span>
-        <span><img src="thumb04.jpg" /></span>
-        <span><img src="thumb05.jpg" /></span>
-        <span><img src="thumb03.jpg" /></span>
+        <div><img src="thumb03.jpg" /></div>
+        <div><img src="thumb04.jpg" /></div>
+        <div><img src="thumb05.jpg" /></div>
+        <div><img src="thumb03.jpg" /></div>
+        <div><img src="thumb04.jpg" /></div>
+        <div><img src="thumb05.jpg" /></div>
+        <div><img src="thumb03.jpg" /></div>
+        <div><img src="thumb04.jpg" /></div>
+        <div><img src="thumb05.jpg" /></div>
   </div>
 </div>
 

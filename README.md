@@ -125,6 +125,7 @@ Parameters of PixelSlide Plugin
       auto: false,          // run slider auto without click on next or previous buttons
       delay: 2000,          // how much each slide delay
       toggleClass: false    // add class for toggle . it will be added on next/prev/start/pause buttons when its hide . if its false then slider will automatically hide buttons
+      tag: "span"           // provide tag name which tag you are using in loop default is span you can use any tag like div,li etc
 
 And Thats All.
 
